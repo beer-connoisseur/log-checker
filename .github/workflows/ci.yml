@@ -2,7 +2,7 @@ name: Build
 on: [push]
 jobs:
   build:
-    runs-on: ubuntu-latest-m
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout sources
         uses: actions/checkout@v4

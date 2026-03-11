@@ -25,3 +25,6 @@ lint: bin/custom-gcl
 fix: build
 	$(LOGCHECKER_BIN) -fix ./...
 
+.PHONY: test
+test:
+	go test -v ./...

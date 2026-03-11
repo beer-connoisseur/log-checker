@@ -1,0 +1,5 @@
+version: v2.11.3
+plugins:
+  # a plugin from local source
+  - module: 'github.com/beer-connoisseur/log-checker'
+    path: .

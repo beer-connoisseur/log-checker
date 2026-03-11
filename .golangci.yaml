@@ -1,0 +1,20 @@
+version: "2"
+run:
+  go: 1.25.1
+  issues-exit-code: 1
+  tests: true
+  allow-parallel-runners: true
+output:
+  formats:
+    text:
+      path: stderr
+      print-linter-name: true
+      print-issued-lines: true
+linters:
+  default: none
+  enable:
+    - logchecker
+  settings:
+    custom:
+      logchecker:
+        type: "module"
